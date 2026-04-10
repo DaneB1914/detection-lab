@@ -1,0 +1,16 @@
+name: Suspicious API Access
+description: Detects repeated access to resources not owned by the user
+log_source: api_logs
+severity: high
+
+logic:
+  type: threshold
+  condition: user != resource_owner
+  group_by:
+    - user
+    - ip
+  threshold: 5
+
+response:
+  action: investigate
+  priority: high

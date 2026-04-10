@@ -1,0 +1,14 @@
+name: Privilege Escalation Activity
+description: Detects high-risk administrative actions
+log_source: cloud_logs
+severity: critical
+
+logic:
+  type: match
+  actions:
+    - attach_admin_policy
+    - disable_logging
+
+response:
+  action: alert
+  priority: critical

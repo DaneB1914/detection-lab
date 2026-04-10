@@ -1,0 +1,16 @@
+name: Brute Force Login Detection
+description: Detects repeated failed login attempts from the same IP and user
+log_source: auth_logs
+severity: high
+
+logic:
+  type: threshold
+  condition: status == "failed"
+  group_by:
+    - ip
+    - user
+  threshold: 5
+
+response:
+  action: alert
+  priority: high

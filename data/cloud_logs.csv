@@ -1,0 +1,5 @@
+timestamp,user,action,target,status,ip
+2026-04-01 13:00:00,service-account,list_buckets,prod-assets,success,10.0.0.5
+2026-04-01 13:01:00,intern-user,view_dashboard,security-console,success,10.0.0.9
+2026-04-01 13:02:00,intern-user,attach_admin_policy,admin-role,success,10.0.0.9
+2026-04-01 13:03:00,intern-user,disable_logging,cloudtrail,success,10.0.0.9
