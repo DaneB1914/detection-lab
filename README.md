@@ -1,7 +1,7 @@
 # Security Automation & Vulnerability Triage Lab
 
 
-Detection Lab is a hands-on detection engineering project designed to simulate real-world security monitoring and detection workflows. The project focuses on identifying malicious and anomalous behavior across multiple data sources using Python, SQL, and detection-as-code concepts.
+This lab is a hands-on detection engineering project designed to simulate real-world security monitoring and detection workflows. The project focuses on identifying malicious and anomalous behavior across multiple data sources using Python, SQL, and detection-as-code concepts.
 
 ---
 
